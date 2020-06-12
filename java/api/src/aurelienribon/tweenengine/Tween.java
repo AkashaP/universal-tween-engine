@@ -728,6 +728,10 @@ public final class Tween extends BaseTween<Tween> {
 		return target;
 	}
 
+	public void setTarget(Object target) {
+		this.target = target;
+	}
+
 	/**
 	 * Gets the type of the tween.
 	 */
