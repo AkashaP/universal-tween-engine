@@ -730,6 +730,7 @@ public final class Tween extends BaseTween<Tween> {
 
 	public void setTarget(Object target) {
 		this.target = target;
+		this.targetClass = target != null ? findTargetClass() : null;
 	}
 
 	/**

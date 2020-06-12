@@ -2,6 +2,18 @@ apply plugin: 'java'
 apply plugin: 'maven'
 
 group = 'com.github.Akasha'
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+
+
 //ant.importBuild('java/build.xml') {
 //	antTargetName -> antTargetName + '_tweenengine'
 //}
