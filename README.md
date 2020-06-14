@@ -1,4 +1,4 @@
-Port of Aurelien Ribon's Universal Tween Engine to kotlin.
+Port of Aurelien Ribon's Universal Tween Engine to kotlin. Laregly unnecessary as kotlin is interchangeable with Java anyway so I haven't put much care.
 
 Project has been lightly tested
 (I did this while working on another project because I wanted to break down some of the API)
