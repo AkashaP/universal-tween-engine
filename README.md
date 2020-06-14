@@ -1,3 +1,10 @@
+Port of Aurelien Ribon's Universal Tween Engine to kotlin.
+
+Project has been lightly tested
+(I did this while working on another project because I wanted to break down some of the API)
+
+A side note - Kotlin supports a special call `.apply { var = value }`, making the need to create Fluent APIs (functions that `return this` for chaining) like in Java kind of unnecessary as you can still oneline it (e.g`tween = new Tween().target(100,100).ease(Linear.INOUT).build` -> `tween = Tween().apply{x=100; y=100; ease=Linear.INOUT}.build()`)
+
 ## Old readme --
 
 ![](http://www.aurelienribon.com/blog/wp-content/uploads/2012/05/tween-engine-big-logo.jpg)
