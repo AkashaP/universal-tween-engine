@@ -1,7 +1,6 @@
-Port of Aurelien Ribon's Universal Tween Engine to kotlin. Laregly unnecessary as kotlin is interchangeable with Java anyway so I haven't put much care.
+Port of Aurelien Ribon's Universal Tween Engine to kotlin. Laregly unnecessary as kotlin is interchangeable with Java anyway so I haven't put much care. (I did this while working on another project because I wanted to break down some of the API and thought **hey while I'm at it why don't I just port it to the language I'm working with?**)
 
 Project has been lightly tested
-(I did this while working on another project because I wanted to break down some of the API)
 
 A side note - Kotlin supports a special call `.apply { var = value }`, making the need to create Fluent APIs (functions that `return this` for chaining) like in Java kind of unnecessary as you can still oneline it (e.g`tween = new Tween().target(100,100).ease(Linear.INOUT).build` -> `tween = Tween().apply{x=100; y=100; ease=Linear.INOUT}.build()`)
 
